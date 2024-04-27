@@ -1,0 +1,37 @@
+.Card {
+    border-radius: 10px;
+    border: 2px solid #1e88e5; /* Football-themed color */
+    height: auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    width: 300px;
+    background-color: #ef3030; /* White background */
+    transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+.Card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.Card h3 {
+    margin: 10px 0; /* Adjusted margin */
+    font-size: 18px; /* Font size */
+    color: #1e88e5; /* Football-themed color */
+}
+
+.Card button {
+    background-color: #1e88e5; /* Football-themed color */
+    color: #833a3a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease; /* Smooth transition effect */
+}
+
+.Card button:hover {
+    background-color: #1565c0; /* Darker shade on hover */
+}

@@ -1,0 +1,59 @@
+:root {
+  font-family: 'Press Start 2P', cursive; /* Game-themed font */
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #a82121; /* Dark gray color for text */
+  background-color: #0f7294; /* Light gray background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #1e88e5; /* Football-themed color for links */
+  text-decoration: none;
+}
+a:hover {
+  color: #98291a; /* Darker shade on hover */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 300px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #0ebed1; /* Football-themed color for headings */
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Press Start 2P', cursive; /* Game-themed font for buttons */
+  background-color: #1e88e5; /* Football-themed color for buttons */
+  color: #84e449; /* White color for button text */
+  cursor: pointer;
+  transition: background-color 0.25s;
+  margin-top: 0.5em;
+  margin-right: 0.3em;
+}
+button:hover {
+  background-color: #e01f1f; /* Darker shade on hover */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

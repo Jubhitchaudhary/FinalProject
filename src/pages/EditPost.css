@@ -1,0 +1,54 @@
+.EditPost {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Limit maximum width */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top: 3em;
+    text-align: left;
+}
+
+.EditPost h2 {
+    color: #25c84b; /* Sporty green color */
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: left; /* Align labels to the left */
+}
+
+.EditPost form {
+    display: flex;
+    flex-direction: column;
+}
+
+.EditPost label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.EditPost input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: right;
+}
+
+.EditPost button {
+    background-color: #25c84b; /* Sporty green color */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.EditPost button:hover {
+    background-color: #1e9542; /* Darker green color on hover */
+}

@@ -1,0 +1,71 @@
+.CreatePost {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-top: 80px; /* Add margin to prevent touching the navbar */
+}
+
+.CreatePost form {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Align labels to the left */
+}
+
+
+.CreatePost h2 {
+    color: #608070;
+    font-family: 'Arial', sans-serif; /* Change font style */
+}
+
+.CreatePost label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Change font style */
+}
+
+.CreatePost input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.CreatePost button {
+    background-color: #06230d; /* Sporty green color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    font-family: 'Arial', sans-serif; /* Change font style */
+}
+
+.CreatePost button:hover {
+    background-color: #2969e0; /* Darker green color on hover */
+}
+
+.home-button {
+    background-color: #07150e; /* Sporty blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-top: 20px; /* Add space between buttons */
+    font-family: 'Arial', sans-serif; /* Change font style */
+}
+
+.home-button:hover {
+    background-color: #041824; /* Darker blue color on hover */
+}
+h2{
+    text-align:left ;
+}

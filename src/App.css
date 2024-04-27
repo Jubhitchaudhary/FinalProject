@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sort-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 0.5px;
+  margin-bottom: 2em;
+  color: #888;
+}
+
+.sort-search select,
+.sort-search input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sort-search select {
+  background-color: #8be756;
+  color: rgb(182, 55, 55);
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+.sort-search input {
+  flex: 1;
+  background-color: white;
+  color: #333;
+  width: 20em;
+}
+
+.football-emoji {
+  transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}
+
+.football-emoji:hover {
+  transform: rotate(360deg); /* Rotate 360 degrees when hovered over */
+}

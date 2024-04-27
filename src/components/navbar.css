@@ -1,0 +1,63 @@
+.Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e272e; /* Dark background color */
+    color: #fff;
+    padding: 10px 0px; /* Adjust padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Press Start 2P', cursive; /* Game-themed font */
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.left > * {
+    color: #fff;
+    text-decoration: none;
+}
+
+.left > *:hover {
+    color: #bbdefb; /* Lighter color on hover */
+    text-decoration: none;
+}
+
+.right {
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #fff;
+}
+
+.right > * {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.right > *:hover {
+    color: #bbdefb; /* Lighter color on hover */
+}
+
+/* Style for search input */
+.right > input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 480px;
+    font-size: 16px;
+    background-color: #fff; /* White background for contrast */
+    color: #333; /* Dark text color */
+    width: 200px;
+}
+
+/* Hover effect for search input */
+.right > input[type="text"]:hover,
+.right > input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(160, 52, 52, 0.5); /* Light shadow on hover/focus */
+}
