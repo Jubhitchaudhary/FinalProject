@@ -6,27 +6,30 @@ import { Link } from 'react-router-dom';
 
 const Post = (props) => {
     const [votes, setVotes] = useState(props.votes || 0);
+
     const handleVote = async () => {
         try {
             // Increment the local votes count
-            const newVotes = votes + 1;
-            setVotes(newVotes);
-            
+            setVotes(votes + 1);
+    
             // Update the votes count in the database
             const { error } = await supabase
                 .from('FootballPost')
-                .update({ votes: newVotes })
+                .update({ votes: votes + 1 })
                 .eq('id', props.id);
-            
+    
             if (error) {
                 throw error;
             }
+    
+            // Update the props.votes value after successful database update
+            props.onVote(votes + 1);
         } catch (error) {
             console.error('Error updating votes:', error.message);
-            // Revert the local votes count if an error occurs
-            setVotes(votes);
         }
     };
+    
+
 
     return (
         <div className='Post'>
@@ -51,7 +54,7 @@ const Post = (props) => {
                         {/* Like emoji icon */}
                         <span role="img" aria-label="Like">👍</span>
                     </button>
-                    <span>Votes: {props.votes}</span>
+                    <span>Votes: {votes}</span>
                 </div>
                 <Link to={"/edit/" + props.id}><button>Edit Post</button></Link>
             </div>

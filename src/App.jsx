@@ -15,7 +15,7 @@ function App() {
       let { data, error } = await supabase
         .from('FootballPost')
         .select()
-        .order(sortBy, { ascending:false}); // Set ascending to true if sorting by created_at
+        .order(sortBy, { ascending: false }); // Set ascending to false if sorting by created_at
 
       if (error) {
         console.error('Error fetching Posts:', error.message);
@@ -32,9 +32,8 @@ function App() {
   }, [sortBy, searchTitle]); // Update posts when sortBy or searchTitle changes
 
   const handleSortChange = (event) => {
-    const selectedSort = event.target.value;
-    setSortBy(selectedSort);
-  };;
+    setSortBy(event.target.value);
+  };
 
   const handleSearch = (event) => {
     setSearchTitle(event.target.value);
@@ -43,13 +42,11 @@ function App() {
   return (
     <div className='App'>
       <Nav />
-      
-    <h1>Welcome all to Football Hub!!<span className="football-emoji">⚽️</span></h1>
-
+      <h1>Welcome to the Football Hub!</h1>
       <div className="sort-search">
         <select value={sortBy} onChange={handleSortChange}>
-          <option value="created_at">Time Created</option>
-          <option value="votes">Maximum Upvotes</option>
+          <option value="created_at">Sort by Created Time</option>
+          <option value="votes">Sort by Upvotes</option>
         </select>
         <input type="text" placeholder="Search by title" value={searchTitle} onChange={handleSearch} />
       </div>

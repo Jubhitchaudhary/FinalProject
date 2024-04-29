@@ -7,7 +7,7 @@ import Nav from '../components/navbar';
 const EditPost = () => {
 
     const {id} = useParams()
-    const [post, setPost] = useState({title: "", content: "", url: "", votes: ""})
+    const [post, setPost] = useState({title: "", content: "", url: "", votes: 0})
 
     const handleChange = (event) => {
         const {name, value} = event.target;
